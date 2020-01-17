@@ -1,4 +1,4 @@
-//Create var for express npm 
+//Create var to require express package 
 
 var express = require("express");
 
@@ -12,7 +12,7 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//Setting up Routes
+//Linking html and api routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
